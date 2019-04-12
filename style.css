@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.parallax-img1 {
+  background: url('images/purple-mounts.jpg');
+  min-height: 100%;
+}
+
+.parallax-img2 {
+  background: url('images/magnolia.jpg');
+  min-height: 400px;
+}
+
+.parallax-img3 {
+  background: url('images/mounts.jpg');
+  min-height: 400px;
+}
+
+
+.parallax-img1, .parallax-img2, .parallax-img3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section {
+  text-align: center;
+  padding: 40px 80px;
+  opacity: 0.8;
+}
+
+.section-light {
+  background:rgb(247, 224, 220);
+}
+
+.section-dark {
+  background: #757370;
+  color: rgb(247, 224, 220);
+}
+
+.section-bluish {
+  background: #53587c;
+  color: rgb(247, 224, 220);
+}
+
+.parallax-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.parallax-text .border {
+  background: rgba(88, 88, 117, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.parallax-text .border.transparent {
+  color: black;
+  background: transparent;
+}
+
+@media (max-width:568px){
+  .parallax-img1, .parallax-img2, .parallax-img3 {
+    background-attachment: scroll;
+  }
+}
